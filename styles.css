@@ -1,0 +1,8 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background:linear-gradient(to bottom, #5d50c7, #605ecc, #6b72cf, #6c8fbd, #6dbbc7, #6fd9c7, #6eebb8 );
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    
+}
