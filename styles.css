@@ -37,3 +37,17 @@ button:hover{
     background-color: azure;
     border-radius: 5px;
 }
+/*Container for products*/
+.products-grip{
+    display: flex; /* easy to align items in a row or column*/
+    flex-wrap: wrap; /*moves text to the next line  */
+    justify-content: space-around; /* equal space on both sides of the cards*/
+    gap: 20px;
+    padding: 20px;
+}
+.product-card{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width:300px
+}
