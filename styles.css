@@ -1,68 +1,90 @@
-body{
+* {
     margin: 0;
-    height: 100vh;
-    background:linear-gradient(to bottom, #5d50c7, #605ecc, #6b72cf, #6c8fbd, #6dbbc7, #6fd9c7, #6eebb8 );
-    font-family:Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-
+    padding: 0;
+    box-sizing: border-box;
 }
-h1{
+
+body {
+    height: 100vh;
+    background: linear-gradient(to bottom, #5d50c7, #605ecc, #6b72cf, #6c8fbd, #6dbbc7, #6fd9c7, #6eebb8);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    overflow-y: auto;
+}
+
+h1 {
     text-align: center;
     color: black;
     font-weight: 700;
     font-size: 3rem;
     text-transform: uppercase;
+    margin: 20px 0;
 }
-h2 h3{
+
+h2, h3 {
     text-align: center;
     color: black;
     font-weight: 500;
     font-size: 2.5rem;
-
+    margin: 15px 0;
 }
-p{
+
+p {
     text-align: left;
     color: black;
     font-weight: 400;
-    margin: 50%;
+    margin: 15px 0;
+    padding: 0 20px;
 }
-/* Contact us (container) */
 
-
-button{
+button {
     border: none;
     padding: 10px 20px;
-}
-button:hover{
-    background-color: azure;
+    background-color: #6b72cf;
+    color: white;
     border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
-/*Container for products*/
-.products-grid{
-    display: flex; /* easy to align items in a row or column*/
-    flex-wrap: wrap; /*moves text to the next line  */
-    justify-content: space-around; /* equal space on both sides of the cards*/
+
+button:hover {
+    background-color: azure;
+    color: black;
+    transform: scale(1.05);
+}
+
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     gap: 20px;
     padding: 20px;
-    flex-direction: row ;
     align-items: center;
-    
 }
-.product-card{
+
+.product-card {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width:300px
+    width: 300px;
+    padding: 15px;
+    transition: 0.3s ease;
 }
-/* Footer*/
-footer{
+
+.product-card:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+footer {
     text-align: left;
     color: black;
-    margin: 0;
-    border: none;
-    padding-left: 70%;
+    margin-top: 40px;
+    padding-left: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
-nav{
+
+nav {
     display: flex;
     justify-content: center;
     gap: 20px;
